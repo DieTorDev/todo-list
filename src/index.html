@@ -1,17 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/base/normalize.css" />
-		<link rel="stylesheet" href="css/base/base.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Vite App</title>
-	</head>
-	<body>
-		<h1>WEB WITH VITE</h1>
-		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
-		<script type="module" src="./js/index.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO list</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+    </header>
+    
+    <div class="title-container">
+        <h1 class="title">
+            TODO
+        </h1>
+        <button class="night-mode">
+            <img class="night-mode-img" src="./assets/images/icon-sun.svg" alt="">
+        </button>
+    </div>
+
+    <main>
+        <div class="input-container container">
+            <input id="input" class="input" type="text" placeholder="Create a new todo...">
+        </div>
+         <ul id="list-container" class="list-container">
+
+         </ul> 
+        <div class="panel-container">
+            <div class="container check-container ">
+                <p class="task-mobile">Tasks: 0</p>
+                <button id="clear-completed-mobile" class="clear-completed-button-mobile clear-completed">Clear completed</button>
+            </div>
+
+            <div class="info-container container">
+                <p class="task">Tasks: 0</p>
+                <div id="show-info" class="info-span-container">
+                    <span class="info info-focus" data-filter="all">All</span>
+                    <span class="info" data-filter="Active">Active</span>
+                    <span class="info" data-filter="Completed">Completed</span>
+                </div>
+                <button id="clear-completed" class="clear-completed-button">Clear completed</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
 </html>
