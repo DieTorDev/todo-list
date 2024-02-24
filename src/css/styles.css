@@ -7,14 +7,9 @@
 
 :root{
     --bg-color-main: #fff;
-    /*
-    --bg-color-night: #25273D
-    */
-    --title-color: #fff;
     --text-color: #8C8CA2;
     --text-color-focus: #3C7CDE;
     --bg-img-header: url(../assets/images/bg-desktop-light.jpg); 
-
     --font-main: 'Josefin Sans', sans-serif;
 }
 
@@ -68,13 +63,17 @@ body{
 }
 
 .title{
-    color: var(--title-color);
+    color: var(--bg-color-main);
 }
 
 .night-mode{
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.night-mode-img{
+    fill: var(--bg-color-main);
 }
 
 .input-container{
@@ -90,6 +89,7 @@ body{
     border-radius: 8px;
     border: none;
     color: var(--text-color);
+    background-color: var(--bg-color-main);
     font-family: var(--font-main);
     font-size: 16px;
     padding-left: 15px;

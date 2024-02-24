@@ -5,11 +5,15 @@ const buttonClearMobileElement = document.getElementById(
 );
 const buttonClearElement = document.getElementById('clear-completed');
 const infoElement = document.getElementById('show-info');
+const nightElement = document.getElementById('night-mode');
+const rootStyles = document.documentElement.style;
 
 export {
 	inputElement,
 	listContainerElement,
 	buttonClearMobileElement,
 	buttonClearElement,
-	infoElement
+	infoElement,
+	rootStyles,
+	nightElement
 };

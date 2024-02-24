@@ -1,4 +1,12 @@
-import { inputElement, listContainerElement, infoElement } from './dom';
+import {
+	inputElement,
+	listContainerElement,
+	infoElement,
+	rootStyles,
+	nightElement
+} from './dom';
+
+let nightMode = false;
 
 const createTodoContainer = () => {
 	const newTodoContainer = document.createElement('li');
@@ -113,4 +121,16 @@ const filterFocus = event => {
 	filterList(event.target);
 };
 
-export { getTodo, clearCompleted, filterFocus };
+const changeNightMode = () => {
+	if (!nightMode) {
+		rootStyles.setProperty('--bg-color-main', '#25273D');
+		nightElement.children[0].src = './assets/images/icon-moon.svg';
+		nightMode = true;
+	} else {
+		rootStyles.setProperty('--bg-color-main', '#fff');
+		nightElement.children[0].src = './assets/images/icon-sun.svg';
+		nightMode = false;
+	}
+};
+
+export { getTodo, clearCompleted, filterFocus, changeNightMode };
