@@ -6,6 +6,8 @@ import {
 	nightElement
 } from './dom';
 
+import { moonImgRoute, sunImgRoute, crossImgRoute } from './constants';
+
 let nightMode = false;
 
 const createTodoContainer = () => {
@@ -39,7 +41,7 @@ const createDelateButton = () => {
 const createDelateCross = () => {
 	const newDelateCross = document.createElement('img');
 	newDelateCross.classList.add('todo-cross');
-	newDelateCross.src = './assets/images/icon-cross.svg';
+	newDelateCross.src = crossImgRoute;
 	return newDelateCross;
 };
 
@@ -124,11 +126,11 @@ const filterFocus = event => {
 const changeNightMode = () => {
 	if (!nightMode) {
 		rootStyles.setProperty('--bg-color-main', '#25273D');
-		nightElement.children[0].src = './assets/images/icon-moon.svg';
+		nightElement.children[0].src = moonImgRoute;
 		nightMode = true;
 	} else {
 		rootStyles.setProperty('--bg-color-main', '#fff');
-		nightElement.children[0].src = './assets/images/icon-sun.svg';
+		nightElement.children[0].src = sunImgRoute;
 		nightMode = false;
 	}
 };
