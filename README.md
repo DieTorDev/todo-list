@@ -1,7 +1,8 @@
 # ToDo list
-
-![Imagen del proyecto](https://github.com/DieTorDev/todo-list/blob/main/screenshots/day-mode.png)
-![Imagen del proyecto](https://github.com/DieTorDev/todo-list/blob/main/screenshots/night-mode.png)
+<p align="center">
+  <img src="https://github.com/DieTorDev/todo-list/blob/main/screenshots/day-mode.png" />
+  <img src="https://github.com/DieTorDev/todo-list/blob/main/screenshots/night-mode.png" />
+</p>
 
 ## Ejemplo en vivo
 
@@ -22,7 +23,6 @@ Manejo de de eventos y control de elementos del DOM desde JavaScript así como l
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://es.wikipedia.org/wiki/HTML5)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://es.wikipedia.org/wiki/CSS)
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
-![P5.js](https://img.shields.io/badge/p5%20js-ED225D?style=for-the-badge&logo=p5dotjs&logoColor=white)
 
 ## Autor ✒️
 
@@ -32,11 +32,6 @@ Diego Torrado Sánchez
 - [LinkedIn](https://www.linkedin.com/in/diego-torrado-s%C3%A1nchez-2124322b4/)
 - [Porfolio web](https://tu-dominio.com/)
 
-## Referencias
-
-- [Documentación P5.js](https://p5js.org/es/reference/)
-- [Artículo Jason Today](https://jason.today/falling-sand)
-- [Video Noita devs](https://www.youtube.com/watch?v=prXuyMCgbTc&t=204s)
 
 ## Licencia 📄
 
